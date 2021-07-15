@@ -5,8 +5,10 @@ apache + php + phpmyadmin + mysql
 
 
 ## set up
+```
 docker system prune  //clean up
 docker-compose up   // run docker
+```
 
 ## Web
 http://localhost

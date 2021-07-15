@@ -27,6 +27,6 @@ sed -i "5c RewriteBase /modx" sample.htaccess
 
 ## modx db information
 
-HOST: db
-USER: root
-PASSWORD: root_pass_fB3uWvTS
+HOST: db  /
+USER: root  /
+PASSWORD: root_pass_fB3uWvTS  /

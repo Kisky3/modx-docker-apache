@@ -1,5 +1,8 @@
 # modx-docker-apache
 
+Modx Evolution docker environment
+apache + php + phpmyadmin + mysql
+
 ## set up
 docker-compose up
 

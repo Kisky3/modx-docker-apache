@@ -1,2 +1,10 @@
-# modx-docker-apache
-⚙️ modx-docker-apache:modx docker, apache + php + mysql + modx evolution
+# docker_php7.3
+
+## DocumentRoot is php/html
+Please deploy your code
+
+## Web
+http://localhost
+
+## phpMyAdmin
+http://localhost:8080

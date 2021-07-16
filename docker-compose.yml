@@ -6,14 +6,13 @@ services:
     ports:
       - '80:80'
     volumes:
-      - ./php/html:/var/www/html
-    links:
-      - mysql
+      - ./html:/var/www/html
+    depends_on: ["db"]
 
-  mysql:
+  db:
     image: mysql:5.7
     volumes:
-      - ./mysql:/var/lib/mysql
+      - ./db/mysql:/var/lib/mysql
     restart: always
     environment:
       MYSQL_ROOT_PASSWORD: root_pass_fB3uWvTS
@@ -25,9 +24,6 @@ services:
       - PMA_HOST=db
       - PMA_USER=root
       - PMA_PASSWORD=root_pass_fB3uWvTS
-    ports:
-      - 8080:80
-    links:
-      - mysql
-    volumes:
-      - ./phpmyadmin/sessions:/sessions
+    restart: always
+    ports: ["8888:80"]
+    depends_on: ["db"]

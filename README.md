@@ -1,7 +1,14 @@
 # modx-docker-apache
 
+[Modx Evolution](https://modx.jp/) docker environment
+apache + php + phpmyadmin + mysql
+
+
 ## set up
-docker-compose up
+```
+docker system prune  //clean up
+docker-compose up   // run docker
+```
 
 ## Web
 http://localhost
@@ -10,6 +17,7 @@ http://localhost
 http://localhost:8080
 
 
+## modx evolution
 run these into docker apache container to install modx evolution
 
 ```
@@ -23,3 +31,11 @@ sed -i "5c RewriteBase /modx" sample.htaccess
 // cd /var/www/html/modx/manager
 // mv ht.access .htaccess
 ```
+
+## modx db
+```
+HOST: db
+USER: root
+PASSWORD: root_pass_fB3uWvTS
+```
+
